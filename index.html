@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="description" content="Prodcast: Servicios de producción de podcasts y contactos profesionales."/>
+    <title>Prodcast - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header>
+        <div class="header-container">
+            <h1>Prodcast</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal/Hero -->
+    <section class="hero" id="inicio">
+        <h2>Bienvenido a Prodcast</h2>
+        <p>Ofrecemos servicios profesionales de producción de podcasts para impulsar tu marca, llegar a tu audiencia y transmitir tu mensaje con la máxima calidad. ¡Haz que tu voz se escuche!</p>
+        <!-- Inserta aquí el iframe de Spotify con tu episodio o playlist -->
+<iframe 
+    title="Lista de reproducción de podcasts en Spotify"
+    style="border-radius:12px; border:none;" 
+    src="https://open.spotify.com/embed/playlist/4IV4ewzJ0Nsw4KXyoIGQ1w?utm_source=generator" 
+    width="100%" 
+    height="152" 
+    allowfullscreen
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+</iframe>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="section" id="servicios">
+        <h3>Nuestros Servicios</h3>
+        <div class="services">
+            <div class="card">
+                <h4>Producción Integral</h4>
+                <p>Desde la idea inicial hasta la publicación, nos encargamos de todo el proceso.</p>
+            </div>
+            <div class="card">
+                <h4>Edición y Mezcla</h4>
+                <p>Quitamos ruidos, ajustamos volúmenes, agregamos música y efectos para un sonido profesional.</p>
+            </div>
+            <div class="card">
+                <h4>Distribución y Marketing</h4>
+                <p>Subimos tu podcast a las principales plataformas y ayudamos a promocionarlo.</p>
+            </div>
+        </div>
+    </section>
+
+  <!-- Sección de Clientes Destacados -->
+<section class="section" id="clientes">
+    <h3>Han confiado en nosotros</h3>
+    <div class="clients">
+        <div class="card">
+            <img src="images/sqm.svg" alt="Logotipo del Cliente A" class="client-logo">
+            <h4>SQM</h4>
+            <p>Podcast reconocido en el sector empresarial.</p>
+        </div>
+        <div class="card">
+            <img src="images/macul.svg" alt="Logotipo del Cliente B" class="client-logo">
+            <h4>Municipalidad de Macul</h4>
+            <p>Show premiado por su innovación en storytelling.</p>
+        </div>
+        <div class="card">
+            <img src="images/chv.svg" alt="Logotipo del Cliente C" class="client-logo">
+            <h4>Chilevisión</h4>
+            <p>Programa líder en el nicho de salud y bienestar.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Contacto -->
+    <section class="section contact-form" id="contacto">
+        <h3>Contacto</h3>
+        <form action="https://formspree.io/f/mvgoepob" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2024 Prodcast - Todos los derechos reservados.
+    </footer>
+</body>
+</html>
